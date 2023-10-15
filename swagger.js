@@ -3,11 +3,11 @@ import swaggerAutogen from 'swagger-autogen';
 const doc = {
   info: {
     version: '1.0.0',      // by default: '1.0.0'
-    title: 'Contacts API',        // by default: 'REST API'
+    title: 'Recipes API',        // by default: 'REST API'
     description: '',  // by default: ''
   },
   host: 'localhost:3000',      // by default: 'localhost:3000'
-  basePath: '/contacts',  // by default: '/'
+  basePath: '/recipes',  // by default: '/'
   schemes: ['http'],   // by default: ['http']
   consumes: [],  // by default: ['application/json']
   produces: [],  // by default: ['application/json']

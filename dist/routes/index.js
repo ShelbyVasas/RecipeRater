@@ -6,7 +6,7 @@ const app = express();
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(express.json());
 app.get("/", (req, res) => {
-    res.send("RecipeRanker");
+    res.send("Recipe Ranker");
 });
 app.get("/recipes", async (req, res) => recipes(req, res));
 app.post("/recipes", saveNew);

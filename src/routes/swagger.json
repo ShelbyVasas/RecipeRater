@@ -2,11 +2,11 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0.0",
-    "title": "Contacts API",
+    "title": "Recipes API",
     "description": ""
   },
   "host": "localhost:3000",
-  "basePath": "/contacts",
+  "basePath": "/",
   "tags": [
     {
       "name": "",
@@ -53,7 +53,44 @@
           "500": {
             "description": "Internal Server Error"
           }
-        }
+        },
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "ingredients": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "cook-time": {
+                  "type": "string"
+                },
+                "rating": {
+                  "type": "string"
+                  },
+                "link": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ]
       }
     },
     "/recipes/": {
