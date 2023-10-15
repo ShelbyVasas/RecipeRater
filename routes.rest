@@ -31,3 +31,38 @@ content-type: application/json
 
 ###
 DELETE http://localhost:3000/recipes?id=652b345ea74b0ad132ce918b    
+
+
+// RENDER LINKS
+###
+GET https://recipe-rater.onrender.com/recipes
+
+###
+GET https://recipe-rater.onrender.com/recipes?id=652af9497cf605d7f8b33989
+
+###
+POST https://recipe-rater.onrender.com/recipes 
+content-type: application/json
+
+{
+  "title": "Greek Lemon Potatoes",
+  "ingredients": ["potatoes", "chicken broth", "olive oil", "lemon juice", "salt", "fresh garlic", "oregano"],
+  "cook-time": "55 minutes",
+  "rating": "5/5",
+  "link": "https://www.delish.com/cooking/recipe-ideas/a39440405/greek-lemon-potatoes-recipe/?epik=dj0yJnU9OGF3Z1VaVmdZajk1R04tRUlJVWVBdjdtdXJ2ZWZaV1YmcD0wJm49bmNLRmY1OUdSaVFldnFBUXJOb0h5dyZ0PUFBQUFBR1VySGVj"
+}
+
+###
+PUT https://recipe-rater.onrender.com/recipes?id=652b4dd724178296b4bb4718
+content-type: application/json
+
+{
+  "title": "Greek Lemon Potatoes",
+  "ingredients": ["Yukon Gold Potatoes", "Chicken broth", "Olive oil", "Lemon juice", "Salt", "Fresh garlic", "Oregano"],
+  "cook-time": "55 minutes",
+  "rating": "5/5",
+  "link": "https://www.delish.com/cooking/recipe-ideas/a39440405/greek-lemon-potatoes-recipe/?epik=dj0yJnU9OGF3Z1VaVmdZajk1R04tRUlJVWVBdjdtdXJ2ZWZaV1YmcD0wJm49bmNLRmY1OUdSaVFldnFBUXJOb0h5dyZ0PUFBQUFBR1VySGVj"
+}
+
+###
+DELETE https://recipe-rater.onrender.com?id=652b345ea74b0ad132ce918b  
