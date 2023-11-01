@@ -5,7 +5,7 @@
         "title": "Recipes API",
         "description": ""
     },
-    "host": "localhost:3000",
+    "host": "recipe-rater.onrender.com",
     "basePath": "/",
     "tags": [
         {
@@ -14,7 +14,7 @@
         }
     ],
     "schemes": [
-        "http"
+        "https"
     ],
     "securityDefinitions": {},
     "paths": {
@@ -101,6 +101,15 @@
                         "name": "id",
                         "in": "query",
                         "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Specify only the fields you want to update in your recipe.",
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     }
                 ],
                 "responses": {
