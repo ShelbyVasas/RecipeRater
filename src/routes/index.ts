@@ -1,10 +1,11 @@
 import { getAll, getByRecipeId, saveNew, updateSingle, deleteSingle, recipes } from '../controllers/recipesController.js'
 import swaggerUi from 'swagger-ui-express';
 import swaggerDocument from './swagger.json' assert {type: 'json'};
-import express from 'express';
+import express, {Request, Response, NextFunction} from 'express';
 import passport from 'passport';
 import session from 'express-session';
 import { Strategy as OAuth2Strategy } from 'passport-oauth2';
+import { authControler } from '../services/authentication.js';
 
 const app = express()
 
@@ -35,8 +36,6 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 passport.serializeUser((user, done) => {
-	console.log(user);
-	userToken = user.token;
 	done(null, user.token);
 }) 
 
@@ -46,16 +45,24 @@ passport.deserializeUser((token, done) => {
 
 app.get('/auth', passport.authenticate('oauth2'));
 app.get('/auth/callback', passport.authenticate('oauth2', { failureRedirect: '/auth'}), (req, res) => {
-	res.json({status:200, token: userToken})
+	res.redirect('/api-docs')
+});
+
+app.get('/logout', function(req: Request, res: Response, next: NextFunction){
+  req.logout(function(err) {
+    if (err) { return next(err); }
+    req.session.destroy();
+    res.redirect('/');
+  });
 });
 
 app.get("/", (req, res) => {
 	res.send("Recipe Ranker");
   });
-app.get("/recipes",  async (req,res) => recipes(req,res))
-app.post("/recipes", saveNew);
-app.put("/recipes/", updateSingle);
-app.delete("/recipes/", deleteSingle);
+app.get("/recipes", authControler, async (req,res) => recipes(req,res))
+app.post("/recipes", authControler, saveNew);
+app.put("/recipes/", authControler, updateSingle);
+app.delete("/recipes/", authControler, deleteSingle);
 
 // Server setup
 app.listen(3000, () => {

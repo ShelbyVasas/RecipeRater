@@ -5,7 +5,7 @@
         "title": "Recipes API",
         "description": ""
     },
-    "host": "recipe-rater.onrender.com",
+    "host": "localhost:3000",
     "basePath": "/",
     "tags": [
         {
@@ -14,7 +14,7 @@
         }
     ],
     "schemes": [
-        "https"
+        "http"
     ],
     "securityDefinitions": {},
     "paths": {
@@ -49,6 +49,9 @@
                 "responses": {
                     "201": {
                         "description": "Created"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
                     },
                     "500": {
                         "description": "Internal Server Error"
@@ -116,6 +119,9 @@
                     "204": {
                         "description": "No Content"
                     },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
                     "500": {
                         "description": "Internal Server Error"
                     }
@@ -133,6 +139,9 @@
                 "responses": {
                     "200": {
                         "description": "OK"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
                     },
                     "500": {
                         "description": "Internal Server Error"

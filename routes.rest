@@ -14,7 +14,8 @@ content-type: application/json
   "ingredients": ["potatoes", "chicken broth", "olive oil", "lemon juice", "salt", "fresh garlic", "oregano"],
   "cook-time": "55 minutes",
   "rating": "5/5",
-  "link": "https://www.delish.com/cooking/recipe-ideas/a39440405/greek-lemon-potatoes-recipe/?epik=dj0yJnU9OGF3Z1VaVmdZajk1R04tRUlJVWVBdjdtdXJ2ZWZaV1YmcD0wJm49bmNLRmY1OUdSaVFldnFBUXJOb0h5dyZ0PUFBQUFBR1VySGVj"
+  "link": "https://www.delish.com/cooking/recipe-ideas/a39440405/greek-lemon-potatoes-recipe/?epik=dj0yJnU9OGF3Z1VaVmdZajk1R04tRUlJVWVBdjdtdXJ2ZWZaV1YmcD0wJm49bmNLRmY1OUdSaVFldnFBUXJOb0h5dyZ0PUFBQUFBR1VySGVj",
+  "comment": "delicious"
 }
 
 ###
@@ -26,7 +27,8 @@ content-type: application/json
   "ingredients": ["Yukon Gold Potatoes", "Chicken broth", "Olive oil", "Lemon juice", "Salt", "Fresh garlic", "Oregano"],
   "cook-time": "55 minutes",
   "rating": "5/5",
-  "link": "https://www.delish.com/cooking/recipe-ideas/a39440405/greek-lemon-potatoes-recipe/?epik=dj0yJnU9OGF3Z1VaVmdZajk1R04tRUlJVWVBdjdtdXJ2ZWZaV1YmcD0wJm49bmNLRmY1OUdSaVFldnFBUXJOb0h5dyZ0PUFBQUFBR1VySGVj"
+  "link": "https://www.delish.com/cooking/recipe-ideas/a39440405/greek-lemon-potatoes-recipe/?epik=dj0yJnU9OGF3Z1VaVmdZajk1R04tRUlJVWVBdjdtdXJ2ZWZaV1YmcD0wJm49bmNLRmY1OUdSaVFldnFBUXJOb0h5dyZ0PUFBQUFBR1VySGVj",
+  "comment": "Make sure to use the yukon gold potatoes next time"
 }
 
 ###
@@ -49,7 +51,8 @@ content-type: application/json
   "ingredients": ["potatoes", "chicken broth", "olive oil", "lemon juice", "salt", "fresh garlic", "oregano"],
   "cook-time": "55 minutes",
   "rating": "5/5",
-  "link": "https://www.delish.com/cooking/recipe-ideas/a39440405/greek-lemon-potatoes-recipe/?epik=dj0yJnU9OGF3Z1VaVmdZajk1R04tRUlJVWVBdjdtdXJ2ZWZaV1YmcD0wJm49bmNLRmY1OUdSaVFldnFBUXJOb0h5dyZ0PUFBQUFBR1VySGVj"
+  "link": "https://www.delish.com/cooking/recipe-ideas/a39440405/greek-lemon-potatoes-recipe/?epik=dj0yJnU9OGF3Z1VaVmdZajk1R04tRUlJVWVBdjdtdXJ2ZWZaV1YmcD0wJm49bmNLRmY1OUdSaVFldnFBUXJOb0h5dyZ0PUFBQUFBR1VySGVj",
+  "comment": "delicious"
 }
 
 ###
@@ -61,7 +64,8 @@ content-type: application/json
   "ingredients": ["Yukon Gold Potatoes", "Chicken broth", "Olive oil", "Lemon juice", "Salt", "Fresh garlic", "Oregano"],
   "cook-time": "55 minutes",
   "rating": "5/5",
-  "link": "https://www.delish.com/cooking/recipe-ideas/a39440405/greek-lemon-potatoes-recipe/?epik=dj0yJnU9OGF3Z1VaVmdZajk1R04tRUlJVWVBdjdtdXJ2ZWZaV1YmcD0wJm49bmNLRmY1OUdSaVFldnFBUXJOb0h5dyZ0PUFBQUFBR1VySGVj"
+  "link": "https://www.delish.com/cooking/recipe-ideas/a39440405/greek-lemon-potatoes-recipe/?epik=dj0yJnU9OGF3Z1VaVmdZajk1R04tRUlJVWVBdjdtdXJ2ZWZaV1YmcD0wJm49bmNLRmY1OUdSaVFldnFBUXJOb0h5dyZ0PUFBQUFBR1VySGVj",
+  "comment": "Make sure to use the yukon gold potatoes next time"
 }
 
 ###
